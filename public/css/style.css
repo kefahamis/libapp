@@ -138,6 +138,7 @@ ul {
 
 .wrapper {
     background: #000;
+    min-height: auto !important;
 }
 
 .wrapper .d-flex {

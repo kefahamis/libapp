@@ -5,7 +5,9 @@
     <div class="row justify-content-center align-items-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center"> Book the best corporate events with us from top industry trainers in Kenya </div>
+                <div class="card-header text-center"> 
+                <img src="{{ asset('assets/img/liberator-app.svg') }}" style="width: 60px;" class="mt-4"/>    
+                Book the best corporate events with us from top industry trainers in Kenya </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

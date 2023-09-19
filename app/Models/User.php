@@ -44,13 +44,13 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function getRedirectRoute()
-    {
-        return match((int)$this->role) {
-            1 => 'admin',
-            2 => 'hr',
-            3 => 'staff',
-            // ...
-        };
-    }
+    // public function getRedirectRoute()
+    // {
+    //     return match((int)$this->role) {
+    //         1 => 'admin',
+    //         2 => 'hr',
+    //         3 => 'staff',
+    //         // ...
+    //     };
+    // }
 }
