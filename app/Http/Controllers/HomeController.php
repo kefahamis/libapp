@@ -24,15 +24,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->role == "1"){
-            return view('admin');
-        }
-        if(Auth::user()->role == "2"){
-            return view('hr');
-        }
-        else{
-            return view('staff');
-        }
+
+        return view('admin');
+        // if(Auth::user()->role == "1"){
+        //     return view('admin');
+        // }
+        // if(Auth::user()->role == "2"){
+        //     return view('hr');
+        // }
+        // else{
+        //     return view('staff');
+        // }
         
         
     }
