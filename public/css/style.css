@@ -6,7 +6,9 @@
 .top-bar .active {
     position: relative;
 }
-
+.navbar .input-group{
+    width:50%;
+}
 .top-bar .active:after {
     content: "";
     position: absolute;
