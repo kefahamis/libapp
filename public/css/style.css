@@ -1,14 +1,21 @@
+body{
+    background: #fff;
+}
 .navbar-brand {
     font-weight: 800;
     font-size: 20px;
 }
-
+.dropdown-toggle.user-info::after{
+ display: none;
+}
 .top-bar .active {
     position: relative;
 }
 .navbar .input-group{
     width:50%;
 }
+.main-sidebar .brand-link,.main-sidebar .d-block{
+text-decoration: none;}
 .top-bar .active:after {
     content: "";
     position: absolute;
@@ -18,7 +25,9 @@
     height: 3px;
     background-color: #fff;
 }
-
+.breadcrumb-item.active{
+    color: #fff;
+}
 .accordion-button::after {
     content: "";
 }
@@ -129,6 +138,7 @@ ul {
 .breadcrumb-item a {
     font-size: 28px !important;
     color: #fff;
+    text-decoration: none;
 }
 
 .breadcrumb-item.active {
@@ -250,10 +260,6 @@ ul {
 
 .carousel-control-prev-icon::before {
     content: '\f053';
-}
-
-.achievement-wrap {
-    padding-left: 0;
 }
 
 .achievement-wrap li {
