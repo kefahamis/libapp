@@ -24,6 +24,21 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+    
+    protected $redirectTo = '/login';
+    protected function redirectTo()
+    {
+        if (auth()->user()->role == '1') {
+            return '/admin';
+        }
+        if (auth()->user()->role == '2') {
+            return '/hr';
+        }
+        if (auth()->user()->role == '3') {
+            return '/staff';
+        }
+        
+    }
 
     /**
      * Where to redirect users after registration.
@@ -73,7 +88,8 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
-        return redirect(getAuthUser()->getRedirectRoute());
+        // return redirect(getAuthUser()->getRedirectRoute());
     }
+    
     
 }

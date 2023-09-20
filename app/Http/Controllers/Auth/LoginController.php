@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -66,8 +66,6 @@ class LoginController extends Controller
                     return redirect('/login')->with('error','Oops seems you are not registered on this site');
            }
        }
-       else{
-        return redirect('/login');
-       }
+
     }
 }
